@@ -4,7 +4,6 @@ const ContactItem = ({
   icon: Icon,
   type,
   link,
-  className,
   color
 }: {
   icon: LucideIcon;

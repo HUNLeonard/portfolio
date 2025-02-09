@@ -16,7 +16,7 @@ const MobilContactCard = ({ contactLinks }: { contactLinks: ContactType[] }) => 
       {/* Image */}
       <div className="mx-auto my-8 max-w-[min(max(50%,300px),500px)] flex justify-end">
         <div className="w-fit h-full rounded-full border-10 md:border-20 border-white overflow-hidden mt-4 ">
-          <img src="src/assets/me_face.webp" className="w-fit h-full rounded-full aspect-square object-contain object-center" />
+          <img src="/assets/me_face.webp" className="w-fit h-full rounded-full aspect-square object-contain object-center" />
         </div>
       </div>
       {/* Text */}

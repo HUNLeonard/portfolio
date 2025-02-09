@@ -15,7 +15,7 @@ const DesktopContactCard = ({ contactLinks }: { contactLinks: ContactType[] }) =
       <span className="font-serif absolute top-1/14 md:top-1/8 -left-1/16 text-[42rem] md:text-[52rem] lg:text-[64rem] rotate-12 leading-[256px]">a</span>
       <div className="ml-auto min-h-1/2 flex justify-end">
         <div className="w-fit h-full rounded-full border-10 md:border-20 border-white overflow-hidden mt-4 ">
-          <img src="src/assets/me_face.webp" className="w-fit h-full rounded-full aspect-square object-contain object-center" />
+          <img src="/assets/me_face.webp" className="w-fit h-full rounded-full aspect-square object-contain object-center" />
         </div>
       </div>
       <div className="ml-auto min-h-1/2 flex flex-row items-center space-x-2">

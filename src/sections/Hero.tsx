@@ -33,8 +33,8 @@ const Hero = () => {
 
   return (
     <section ref={container} className="relative pt-22">
-      <div style={{ backgroundImage: 'url(src/assets/pawel-czerwinski-hero-backgorund-small.webp)' }} className="bg-center bg-cover absolute top-0 left-0 h-full w-full -z-20" />
-      <img src="src/assets/pawel-czerwinski-hero-backgorund.webp" alt="" className="loading-image object-cover object-center transition-opacity duraiton-500 absolute top-0 left-0 h-full w-full -z-10" />
+      <div style={{ backgroundImage: 'url(/assets/pawel-czerwinski-hero-backgorund-small.webp)' }} className="bg-center bg-cover absolute top-0 left-0 h-full w-full -z-20" />
+      <img src="/assets/pawel-czerwinski-hero-backgorund.webp" alt="" className="loading-image object-cover object-center transition-opacity duraiton-500 absolute top-0 left-0 h-full w-full -z-10" />
       <div className="max-w-[1440px] min-h-[calc(100vh_-_92px)] mx-auto poppins-bold flex flex-col justify-between z-10">
         <div className="flex flex-col-reverse lg:flex-row justify-between pt-10 mx-6 lg:mx-12 2xl:mt-16 md:gap-12">
           <div className="lg:mt-24 lg:min-w-1/2 w-full lg:w-max">
@@ -47,9 +47,9 @@ const Hero = () => {
           </div>
 
           <div className="relative max-lg:mx-auto lg:max-w-1/2 shrink lg:flex lg:items-end lg:justify-end overflow-hidden rounded-full" >
-            <img src="src/assets/me-small.webp" alt="" className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 shrink max-lg:mx-auto max-lg:max-w-[clamp(280px,75%,500px)] w-full md:max-w-112 lg:max-w-128 rounded-full object-cover object-center" />
+            <img src="/assets/me-small.webp" alt="" className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 shrink max-lg:mx-auto max-lg:max-w-[clamp(280px,75%,500px)] w-full md:max-w-112 lg:max-w-128 rounded-full object-cover object-center" />
             <img
-              src={"src/assets/me.webp"}
+              src={"/assets/me.webp"}
               alt="me"
               className="loading-image z-10 shrink max-lg:mx-auto max-lg:max-w-[clamp(280px,75%,500px)] w-full md:max-w-112 lg:max-w-128 transition-[opacity_0.5s,scale_0.5s] object-cover object-center rounded-full hover:scale-104"
             />

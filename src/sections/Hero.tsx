@@ -33,9 +33,9 @@ const Hero = () => {
 
   return (
     <section ref={container} className="relative pt-22">
-      <div style={{ backgroundImage: 'url(/assets/pawel-czerwinski-hero-backgorund-small.webp)' }} className="bg-center bg-cover absolute top-0 left-0 h-full w-full -z-20" />
-      <img src="/assets/pawel-czerwinski-hero-backgorund.webp" alt="" className="loading-image object-cover object-center transition-opacity duraiton-500 absolute top-0 left-0 h-full w-full -z-10" />
-      <div className="max-w-[1440px] min-h-[calc(100vh_-_92px)] mx-auto poppins-bold flex flex-col justify-between z-10">
+      <div style={{ backgroundImage: 'url(/assets/pawel-czerwinski-hero-backgorund-small.webp)' }} className="bg-gray-800 bg-center bg-cover absolute top-0 left-0 h-full w-full -z-20" />
+      <img src="/assets/pawel-czerwinski-hero-backgorund.webp" alt="" className="loading-image bg-gray-800 object-cover object-center transition-opacity duraiton-500 absolute top-0 left-0 h-full w-full -z-10" />
+      <div className="max-w-360 min-h-[calc(100vh_-_92px)] mx-auto poppins-bold flex flex-col justify-between z-10">
         <div className="flex flex-col-reverse lg:flex-row justify-between pt-10 mx-6 lg:mx-12 2xl:mt-16 md:gap-12">
           <div className="lg:mt-24 lg:min-w-1/2 w-full lg:w-max">
             <H2 className="max-lg:mx-auto max-lg:text-center">

@@ -44,7 +44,7 @@ const About = () => {
 
   return (
     <section className="min-h-[calc(100vh_-_92px)] relative w-full " id="about">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-12 py-24 flex flex-col justify-between min-h-screen">
+      <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 flex flex-col justify-between min-h-screen">
         <div className="flex flex-col items-start sm:items-center">
           <H2 className="mb-12" gray={true}>
             About Me

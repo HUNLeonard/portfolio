@@ -12,21 +12,21 @@ const Experience = () => {
     configs: {
       leftCard: {
         className: 'LeftCard',
-        animation: 'animate-left',
+        animation: 'animate-bottom',
         delay: 1,
       },
       rightCard: {
         className: 'RightCard',
-        animation: 'animate-right',
+        animation: 'animate-bottom',
         delay: 1,
       },
       title: {
         className: 'H2',
-        animation: 'animate-left'
+        animation: 'animate-bottom'
       },
       subtitle: {
         className: 'H3',
-        animation: 'animate-right'
+        animation: 'animate-bottom'
       }
     }
   });
@@ -34,7 +34,7 @@ const Experience = () => {
   return (
     <>
       <section className="min-h-[calc(100vh_-_92px)] relative w-full" id="experience">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-12 py-24 flex flex-col justify-between min-h-screen">
+        <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 flex flex-col justify-between min-h-screen">
           <div className="flex flex-col items-start lg:items-center">
             <H3 className='!py-0 -mb-4'>What I achived so far...</H3>
             <H2 gray={true}>

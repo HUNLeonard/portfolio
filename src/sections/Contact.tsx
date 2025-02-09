@@ -46,7 +46,7 @@ const Contact = () => {
       className="min-h-[calc(100vh_+_92px)] relative w-full "
       id="contact"
     >
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-12 py-24 min-h-screen">
+      <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 min-h-screen">
         <H2 className="!text-4xl" gray={true}>Let's Connect</H2>
         <H3 className="text-xl">Frontend Developer | React.js | Junior</H3>
 

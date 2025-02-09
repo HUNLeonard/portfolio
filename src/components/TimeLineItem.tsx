@@ -14,7 +14,7 @@ const TimelineItem = ({
   return (
     <div
       className={`${side === "left" ? "LeftCard" : "RightCard"} 
-        relative w-full max-xs-px-2 max-lg:px-6 max-lg:ml-6 lg:w-1/2 ${side === "right" ? "lg:ml-auto" : ""} 
+        relative Card w-full max-xs-px-2 max-lg:px-6 max-lg:ml-6 lg:w-1/2 ${side === "right" ? "lg:ml-auto" : ""} 
         mb-8 transition:[scale] duration-500 hover:scale-105`}>
       <div className={`relative bg-gray-700 p-6 rounded-lg border border-gray-800  
       ${side === "left" ? "lg:mr-10" : "lg:ml-10"}`}>

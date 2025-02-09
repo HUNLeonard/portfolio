@@ -342,13 +342,21 @@
 #skills h2,
 #experience .H2,
 #experience .H3,
-#experience .LeftCard #experience .RightCard {
+#experience .LeftCard #experience .RightCard,
+#contact .H2,
+#contact .H3, #contact .max-ss-hidden, #contact .ss-hidden,
+#contact .mimage,#contact .ss-flex, #contact .sendmail
+{
   opacity: 0;
   filter: blur(4px);
 }
 
 .animate-bottom {
   animation: cardBottom 1s calc(var(--pos) * 1s) ease-out forwards;
+}
+
+.animate-top {
+  animation: cardTop 1s calc(var(--pos) * 1s) ease-out forwards;
 }
 
 .animate-left {
@@ -381,6 +389,16 @@
 @keyframes cardBottom {
   0% {
     transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes cardTop {
+  0% {
+    transform: translateY(-300px);
   }
   100% {
     opacity: 1;

@@ -89,7 +89,7 @@ const Skills = () => {
         groupAnimation: {
           enabled: true,
           childrenSelector: '.skillCardFloatBottom',
-          delayBetween: 0.5
+          delayBetween: 0.25
         }
       },
       title: {

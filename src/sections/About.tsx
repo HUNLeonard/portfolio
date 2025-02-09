@@ -27,7 +27,7 @@ const About = () => {
       cards: {
         className: 'cardFloatInBottom',
         animation: 'animate-bottom',
-        delay: 1,
+        delay: 0.5,
       },
       title: {
         tag: 'h2',

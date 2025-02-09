@@ -3,7 +3,6 @@ import { LucideIcon } from "lucide-react";
 const ContactItem = ({
   icon: Icon,
   type,
-  text,
   link,
   className,
   color
@@ -21,11 +20,10 @@ const ContactItem = ({
 
     <a
       href={type === "email" ? `mailto:${link}` : `${link}`}
-      className={`relative flex flex-row flex-nowrap gap-2 items-center poppins text-sm md:text-base text-white  hover:text-gray-200 transition-colors duration-500 `}
+      className={`relative gap-2 items-center w-fit h-fit`}
       target={`${type !== undefined && '_blank'}`}
     >
-      <Icon size={20} className={`${color} pt-0.5 bg-white rounded-full`} />
-      <span className={`relative underline-hover max-xs-hidden ${className ?? ''} `}>{text}</span>
+      <Icon size={40} className={`${color} m-0.5 border-2 bg-[rgba(255,255,255,0.7)] rounded-md`} />
     </a>
 
   );

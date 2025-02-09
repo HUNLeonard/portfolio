@@ -3,6 +3,7 @@ import H2 from "../features/H2";
 import H3 from "../features/H3";
 import DesktopContactCard from "../components/DesktopContactCard";
 import MobilContactCard from "../components/MobilContactCard";
+import useScrollAnimation from "../hooks/AnimationConfig";
 
 export interface ContactType {
   icon: LucideIcon;
@@ -41,6 +42,44 @@ const Contact = () => {
     },
   ];
 
+  useScrollAnimation({
+    sectionId: 'contact',
+    configs: {
+      title: {
+        className: 'H2',
+        animation: 'animate-right'
+      },
+      description: {
+        tag: 'H3',
+        animation: 'animate-bottom',
+        delay: 1,
+      },
+      desktp: {
+        className: 'max-ss-hidden',
+        animation: 'animate-top',
+        delay: 0.5,
+      },
+      mobil: {
+        className: 'ss-hidden',
+        animation: 'animate-bottom',
+        delay: 1,
+      },
+      mobilImage: {
+        className: 'mimage',
+        animation: 'animate-top',
+        delay: 0.5,
+      }, mobilText: {
+        className: 'ss-flex',
+        animation: 'animate-bottom',
+        delay: 0.5,
+      }, sendmail: {
+        className: 'sendmail',
+        animation: 'animate-bottom',
+        delay: 1,
+      }
+    }
+  });
+
   return (
     <section
       className="min-h-[calc(100vh_+_92px)] relative w-full "
@@ -53,7 +92,7 @@ const Contact = () => {
         <DesktopContactCard contactLinks={contactLinks} />
         <MobilContactCard contactLinks={contactLinks} />
 
-        <div className="relative poppins flex justify-center">
+        <div className="relative poppins flex justify-center sendmail">
           <a
             href="mailto:acsata18@gmail.com" className="relative"
           >

@@ -106,8 +106,8 @@ const Skills = () => {
 
   return (
     <>
-      <section className="min-h-[calc(100vh_-_92px)] relative w-full" id="skills">
-        <div className="max-w-360 mx-auto px-6 lg:px-12 py-24">
+      <section className="relative w-full" id="skills">
+        <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 min-h-screen">
           <div className="flex flex-col items-center mb-16">
             <H2 className="mb-8" gray={true}>
               Skills
@@ -127,8 +127,8 @@ const Skills = () => {
 
         </div>
 
+        <Breaker />
       </section>
-      <Breaker />
     </>
   );
 };

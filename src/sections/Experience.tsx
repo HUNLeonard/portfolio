@@ -33,8 +33,8 @@ const Experience = () => {
 
   return (
     <>
-      <section className="min-h-[calc(100vh_-_92px)] relative w-full" id="experience">
-        <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 flex flex-col justify-between min-h-screen">
+      <section className="relative w-full" id="experience">
+        <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 min-h-screen">
           <div className="flex flex-col items-start lg:items-center">
             <H3 className='!py-0 -mb-4'>What I achived so far...</H3>
             <H2 gray={true}>

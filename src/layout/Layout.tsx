@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <>
       <ContextManager>
         <Navbar />
-        <main className='relative min-h-[max(100vh,800px)] scroll-smooth mx-auto poppins'>
+        <main className='relative scroll-smooth mx-auto poppins'>
           {children}
         </main>
       </ContextManager>

@@ -43,8 +43,8 @@ const About = () => {
 
 
   return (
-    <section className="min-h-[calc(100vh_-_92px)] relative w-full " id="about">
-      <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 flex flex-col justify-between min-h-screen">
+    <section className="relative w-full " id="about">
+      <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 flex flex-col xl md:gap-8 gap-4 min-h-screen">
         <div className="flex flex-col items-start sm:items-center">
           <H2 className="mb-12" gray={true}>
             About Me
@@ -64,7 +64,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row max-md:flex-wrap justify-center gap-8 w-full my-6 mx-auto ">
+        <div className="flex flex-col sm:flex-row max-md:flex-wrap justify-center gap-4 lg:gap-8 w-full my-6 mx-auto ">
           {cards.map((card, index) => (
             <div key={index} className="shrink w-full sm:w-[calc(50%_-_1rem)] md:w-1/3">
               <AboutCard key={card.title} title={card.title} icon={card.icon} />

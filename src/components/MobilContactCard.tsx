@@ -20,7 +20,7 @@ const MobilContactCard = ({ contactLinks }: { contactLinks: ContactType[] }) => 
         </div>
       </div>
       {/* Text */}
-      <div className="relative ss-flex flex-col h-full w-full mx-auto bg-[rgba(255,255,255,0.3)] 
+      <div className="relative ss-flex flex-col h-full w-full mx-auto bg-[#1a1f2e] 
       border-[1px] border-white backdrop-blur-lg  shadow-lg overflow-hidden">
 
         <div className="flex flex-row pt-4 pb-3 px-4 justify-between max-h-32">

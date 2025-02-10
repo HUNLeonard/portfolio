@@ -11,8 +11,8 @@ interface ContactType {
 
 const DesktopContactCard = ({ contactLinks }: { contactLinks: ContactType[] }) => {
   return (
-    <div className="relative max-ss-hidden flex flex-col aspect-[7/4] w-full h-92 sm:h-100 md:h-112 lg:h-128 md:max-w-3xl lg:max-w-4xl mx-auto  bg-[rgba(255,255,255,0.3)] border-[1px] border-white backdrop-blur-lg overflow-hidden shadow-lg pr-4 my-8 ">
-      <span className="font-serif absolute top-1/14 md:top-1/8 -left-1/16 text-[42rem] md:text-[52rem] lg:text-[64rem] rotate-12 leading-[256px]">a</span>
+    <div className="relative group max-ss-hidden flex flex-col aspect-[7/4] w-full h-92 sm:h-100 md:h-112 lg:h-128 md:max-w-3xl lg:max-w-4xl mx-auto  bg-[#1a1f2e]  border-[1px] border-white rounded-lg overflow-hidden shadow-lg pr-4 my-8 ">
+      <span className="font-serif absolute top-1/14 md:top-1/8 -left-1/16 text-[42rem] md:text-[52rem] lg:text-[64rem] rotate-12 leading-[256px] text-white mix-blend-exclusion">a</span>
       <div className="ml-auto min-h-1/2 flex justify-end">
         <div className="w-fit h-full rounded-full border-10 md:border-20 border-white overflow-hidden mt-4 ">
           <img src="/assets/me_face.webp" className="w-fit h-full rounded-full aspect-square object-contain object-center z-10" />

@@ -20,25 +20,25 @@ const Contact = () => {
       type: "email",
       text: "acsata18@gmail.com",
       link: "acsata18@gmail.com",
-      color: "text-blue-500",
+      color: "blue-500",
     },
     {
       icon: Facebook,
       text: "Facebook",
       link: "https://www.facebook.com/atesz.acs/",
-      color: "text-blue-600",
+      color: "blue-600",
     },
     {
       icon: Instagram,
       text: "Instagram",
       link: "https://www.instagram.com/atesz_acs/",
-      color: "text-red-400",
+      color: "red-400",
     },
     {
       icon: Linkedin,
       text: "LinkedIn",
       link: "https://www.linkedin.com/in/attila-%C3%A1cs-9569b229a/",
-      color: "text-blue-700",
+      color: "blue-700",
     },
   ];
 

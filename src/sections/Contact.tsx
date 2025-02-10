@@ -86,7 +86,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 min-h-screen">
-        <H2 className="!text-4xl" gray={true}>Let's Connect</H2>
+        <H2 className="max-xs-text-4xl" gray={true}>Let's Connect</H2>
         <H3 className="text-xl">Frontend Developer | React.js | Junior</H3>
 
         <DesktopContactCard contactLinks={contactLinks} />

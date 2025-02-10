@@ -250,7 +250,7 @@
 
 @media (width <= 480px) {
   .max-xs-text-4xl {
-    font-size: 36px;
+    font-size: 36px !important;
   }
   .max-xs-text-3xl {
     font-size: 30px;

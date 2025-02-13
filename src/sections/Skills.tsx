@@ -97,7 +97,7 @@ const Skills = () => {
         animation: 'animate-right'
       },
       description: {
-        tag: 'p',
+        className: 'animated-p',
         animation: 'animate-blur',
         delay: 1,
       }
@@ -112,7 +112,7 @@ const Skills = () => {
             <H2 className="mb-8" gray={true}>
               Skills
             </H2>
-            <p className="text-center max-w-2xl text-base sm:text-lg text-gray-400 mb-12">
+            <p className="animated-p text-center max-w-2xl text-base sm:text-lg text-gray-400 mb-12">
               My technical skills and tools I use to bring <span className="text-blue-400">ideas to life</span>
             </p>
           </div>

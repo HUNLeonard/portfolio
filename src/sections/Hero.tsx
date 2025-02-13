@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
 
           <div className="relative max-lg:mx-auto lg:max-w-1/2 shrink lg:flex lg:items-end lg:justify-end overflow-hidden rounded-full" >
-            <img src="/assets/me-small.webp" alt="" className="absolute -z-10 top-0 left-1/2 -translate-x-1/2 shrink max-lg:mx-auto max-lg:max-w-[clamp(280px,75%,500px)] w-full md:max-w-112 lg:max-w-128 rounded-full object-cover object-center" />
+            <img src="/assets/me-small.webp" alt="" className="absolute -z-10 bottom-0 left-1/2 -translate-x-1/2 shrink max-lg:mx-auto max-lg:max-w-[clamp(280px,75%,500px)] transition-[scale_0.5s] w-full md:max-w-112 lg:max-w-128 rounded-full object-cover object-center" />
             <img
               src={"/assets/me.webp"}
               alt="me"

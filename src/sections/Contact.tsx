@@ -1,44 +1,39 @@
-import { Facebook, Instagram, Linkedin, LucideIcon, Mail } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, LucideIcon } from "lucide-react";
+import { FACEBOOKLINK, GITHUBLINK, INSTAGRAMLINK, LINKEDINLINK } from "../constants/constants"
 import H2 from "../features/H2";
-import H3 from "../features/H3";
+import H5 from "../features/H5";
 import DesktopContactCard from "../components/DesktopContactCard";
 import MobilContactCard from "../components/MobilContactCard";
 import useScrollAnimation from "../hooks/AnimationConfig";
+import SendEmailForm from "../components/SendEmailForm";
 
 export interface ContactType {
   icon: LucideIcon;
-  type?: "email";
   text: string;
   link: string;
-  color: string;
 }
 
 const Contact = () => {
   const contactLinks: ContactType[] = [
     {
-      icon: Mail,
-      type: "email",
-      text: "acsata18@gmail.com",
-      link: "acsata18@gmail.com",
-      color: "blue-500",
+      icon: Github,
+      text: "Github",
+      link: GITHUBLINK,
     },
     {
       icon: Facebook,
       text: "Facebook",
-      link: "https://www.facebook.com/atesz.acs/",
-      color: "blue-600",
+      link: FACEBOOKLINK,
     },
     {
       icon: Instagram,
       text: "Instagram",
-      link: "https://www.instagram.com/atesz_acs/",
-      color: "red-400",
+      link: INSTAGRAMLINK,
     },
     {
       icon: Linkedin,
       text: "LinkedIn",
-      link: "https://www.linkedin.com/in/attila-%C3%A1cs-9569b229a/",
-      color: "blue-700",
+      link: LINKEDINLINK,
     },
   ];
 
@@ -47,10 +42,11 @@ const Contact = () => {
     configs: {
       title: {
         className: 'H2',
-        animation: 'animate-right'
+        animation: 'animate-right',
+        delay: 1
       },
       description: {
-        tag: 'H3',
+        tag: 'H5',
         animation: 'animate-bottom',
         delay: 1,
       },
@@ -73,9 +69,8 @@ const Contact = () => {
         animation: 'animate-bottom',
         delay: 0.5,
       }, sendmail: {
-        className: 'sendmail',
+        tag: 'form',
         animation: 'animate-bottom',
-        delay: 1,
       }
     }
   });
@@ -87,21 +82,16 @@ const Contact = () => {
     >
       <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 min-h-screen">
         <H2 className="max-xs-text-4xl" gray={true}>Let's Connect</H2>
-        <H3 className="text-xl">Frontend Developer | React.js | Junior</H3>
+        <H5 className="text-xl py-5">Frontend Developer | React.js | Junior</H5>
 
-        <DesktopContactCard contactLinks={contactLinks} />
-        <MobilContactCard contactLinks={contactLinks} />
+        <div className="flex flex-col 2xl:flex-row gap-4">
 
-        <div className="relative poppins flex justify-center sendmail">
-          <a
-            href="mailto:acsata18@gmail.com" className="relative"
-          >
-            <button className="relative mx-auto text-white overflow-hidden
-              transition-all duration-300  px-4 py-2 border-2 rounded-2xl 
-               cursor-pointer shadow-md hover:shadow-xl text-2xl button-bg-change">
-              Send email
-            </button>
-          </a>
+
+          <DesktopContactCard contactLinks={contactLinks} />
+          <MobilContactCard contactLinks={contactLinks} />
+          <SendEmailForm />
+
+
         </div>
 
       </div>

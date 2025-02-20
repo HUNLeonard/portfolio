@@ -36,6 +36,7 @@ const ContextManager = ({ children }: { children: React.ReactNode }) => {
       setIsScroll(window.scrollY < 5);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

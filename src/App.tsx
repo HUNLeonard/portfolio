@@ -4,6 +4,7 @@ import Contact from './sections/Contact'
 import Experience from './sections/Experience'
 import Skills from './sections/Skills'
 import Hero from './sections/Hero'
+import Projects from './sections/Projects'
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Skills />
       <Experience />
+      <Projects />
       <Contact />
     </Layout>
   )

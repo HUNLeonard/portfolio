@@ -1,6 +1,6 @@
 import H2 from '../features/H2';
 import Breaker from '../features/Breaker';
-import H3 from '../features/H3';
+import H5 from '../features/H5';
 import TimelineItem from '../components/TimeLineItem';
 import useScrollAnimation from '../hooks/AnimationConfig';
 
@@ -25,7 +25,7 @@ const Experience = () => {
         animation: 'animate-bottom'
       },
       subtitle: {
-        className: 'H3',
+        className: 'H5',
         animation: 'animate-bottom'
       }
     }
@@ -36,7 +36,7 @@ const Experience = () => {
       <section className="relative w-full" id="experience">
         <div className="max-w-360 mx-auto px-6 lg:px-12 py-24 min-h-screen">
           <div className="flex flex-col items-start lg:items-center">
-            <H3 className='!py-0 -mb-4'>What I achived so far...</H3>
+            <H5 className='py-5 -mb-4'>What I achived so far...</H5>
             <H2 gray={true}>
               My Experiences
             </H2>

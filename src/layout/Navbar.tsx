@@ -10,7 +10,7 @@ const Navbar = () => {
   }
   const { isScroll, scrollToTop } = context;
 
-  const menuPoints = ["about", "skills", "experience"]
+  const menuPoints = ["about", "skills", "experience", "projects"]
 
   return (
     <header className={`fixed top-6 left-0 right-0 mx-auto w-full max-w-360 h-16 bg-linear-20 from-gray-800 to-gray-900 md:rounded-md transition-all ease-in-out duration-200 ${isScroll ? 'translate-y-0' : '-translate-y-6 !rounded-t-none'} z-50`}>

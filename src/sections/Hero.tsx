@@ -1,35 +1,20 @@
 import { useContext, useEffect, useRef } from "react";
 import H2 from "../features/H2";
-import H3 from "../features/H3";
+import H5 from "../features/H5";
 import { VariableContext } from "../Context/ContextManager";
+import { useLoadingImage } from "../hooks/useLoadingImage";
 
 const Hero = () => {
   const context = useContext(VariableContext);
-  const container = useRef<HTMLElement>(null);
-
   if (context === null) {
     return;
   }
   const { scrollToElement } = context;
-
+  const container = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const loadingImages = Array.from(container.current?.querySelectorAll(".loading-image") ?? []);
+    useLoadingImage(container.current);
+  }, []);
 
-    loadingImages.forEach(async (img) => {
-      if (!(img instanceof HTMLImageElement)) return;
-
-      const loaded = () => {
-        img.classList.remove("loading")
-      }
-      await new Promise((resolve) => setTimeout(resolve, 10));
-      if (img.complete) {
-        loaded()
-      } else {
-        img.classList.add("loading")
-        img.addEventListener("load", loaded)
-      }
-    })
-  }, [])
 
   return (
     <section ref={container} className="relative pt-22">
@@ -41,9 +26,9 @@ const Hero = () => {
             <H2 className="max-lg:mx-auto max-lg:text-center">
               Hi, my name is&nbsp;<span className="text-[#00aceb] [filter:drop-shadow(0px_0px_5px_rgb(0,0,0))]">Attila</span>
             </H2>
-            <H3 className="max-lg:mx-auto max-lg:text-center w-fit max-w-128">
+            <H5 className="max-lg:mx-auto max-lg:text-center w-fit max-w-128 py-5 ">
               I am a <span className="text-blue-700 [filter:drop-shadow(0px_0px_5px_rgb(0,0,0))]">React.js</span>  developer<br /> from Hungary.
-            </H3>
+            </H5>
           </div>
 
           <div className="relative max-lg:mx-auto lg:max-w-1/2 shrink lg:flex lg:items-end lg:justify-end overflow-hidden rounded-full" >

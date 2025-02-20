@@ -11,16 +11,30 @@
 @font-face {
   font-family: "poppins-bold";
   src: url(/fonts/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url(/fonts/Poppins/Poppins-ExtraBold.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: "poppins";
   src: url(/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "poppins-semibold";
   src: url(/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
 }
 
 .poppins {
@@ -29,6 +43,10 @@
 
 .poppins-semibold {
   font-family: "poppins-semibold";
+}
+
+.poppins-extrabold {
+  font-family: "poppins-extrabold";
 }
 
 .poppins-bold {
@@ -341,11 +359,12 @@
 #skills .animated-p,
 #skills h2,
 #experience .H2,
-#experience .H3, #experience .Card,
+#experience .H5, #experience .Card,
 #experience .LeftCard #experience .RightCard,
+#projects H2, #projects .projcont, #projects .projdesc, 
 #contact .H2,
-#contact .H3, #contact .max-ss-hidden, #contact .ss-hidden,
-#contact .mimage,#contact .ss-flex, #contact .sendmail
+#contact .H5, #contact .max-ss-hidden, #contact .ss-hidden,
+#contact .mimage,#contact .ss-flex, #contact .sendmail, #contact form
 {
   opacity: 0;
   filter: blur(4px);
@@ -423,4 +442,41 @@
     opacity: 1;
     filter: blur(0);
   }
+}
+
+.cursomScroll::-webkit-scrollbar {
+  width: 20px;
+  
+}
+
+.cursomScroll::-webkit-scrollbar-thumb {
+  background: rgba(107, 100, 186,0.5); 
+  cursor: grabbing;
+}
+
+
+.scroll-round::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-round::-webkit-scrollbar-thumb {
+  background: rgba(107, 100, 186,0.5); 
+  cursor: grabbing;
+  border-radius: 5px;
+
+}
+
+.dotFloat{
+  animation: dotFloatAnim ease-in-out infinite;
+}
+
+@keyframes dotFloatAnim {
+  0%,20%,80%,100%{translate: 0px 0px;}
+  40%{
+    translate: 0px -5px ;
+  }
+  60%{
+    translate: 0px +1px;
+  }
+
 }

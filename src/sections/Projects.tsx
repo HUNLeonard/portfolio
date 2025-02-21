@@ -8,12 +8,12 @@ import Breaker from '../features/Breaker'
 
 const Projects = () => {
   const projects: Project[] = [{
-    title: "Movie search with external API",
+    title: "Movies with external API",
     slug: "movies-react",
     src: "/assets/movies-wide.webp",
     src_mobil: "/assets/movies-phone.webp",
-    desc: "A website where the user can sort and filter in movies that come from the TheMovieDataBase API.",
-    note: "A project where I tried to learn the React Query, and React Routers basics.",
+    desc: "A website where the user can sort, filter in movies that come from the TheMovieDataBase API.",
+    note: "A project where I tried to learn the React Query and React Routers basics.",
     keywords: ["HTML5", "CSS3", "Tailwind", "ReactJs", "React Query", "Context Api", "React Router v6"],
   },
   {
@@ -50,7 +50,7 @@ const Projects = () => {
       <section className="relative w-full min-h-screen max-w-360 mx-auto px-6 lg:px-12 py-24" id="projects">
         <div className='mb-8 md:mb-16 space-y-2'>
           <H2 gray={true} className='!leading-20'>My Projects</H2>
-          <H5 className='projdesc !leading-12'>Apps I've made, on so far to practice...</H5>
+          <H5 className='projdesc !leading-12'>Apps I've made so far to practice...</H5>
         </div>
         <div className={cn("projcont overflow-x-auto overflow-y-hidden cursomScroll [scroll-snap-type:x_mandatory]",
           "border-2 border-gray-200/50 rounded-md md:rounded-lg")}>

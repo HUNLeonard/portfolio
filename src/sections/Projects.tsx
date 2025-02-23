@@ -13,7 +13,7 @@ const Projects = () => {
     src: "/assets/listmaker.webp",
     desc: "A kanban styled list maker, with basic functionality.",
     note: "In this project I've tried out a statemanager called Zustand.",
-    keywords: ["HTML5", "CSS3", "Tailwind", "ReactJs", "Zustand"],
+    keywords: ["Tailwind", "ReactJs", "Zustand"],
   }, {
     title: "Movies with external API",
     slug: "movies-react",

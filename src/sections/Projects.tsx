@@ -8,6 +8,13 @@ import Breaker from '../features/Breaker'
 
 const Projects = () => {
   const projects: Project[] = [{
+    title: "List maker with Zustand",
+    slug: "listmaker-react",
+    src: "/assets/listmaker.webp",
+    desc: "A kanban styled list maker, with basic functionality.",
+    note: "In this project I've tried out a statemanager called Zustand.",
+    keywords: ["HTML5", "CSS3", "Tailwind", "ReactJs", "Zustand"],
+  }, {
     title: "Movies with external API",
     slug: "movies-react",
     src: "/assets/movies-wide.webp",

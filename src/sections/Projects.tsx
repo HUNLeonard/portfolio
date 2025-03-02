@@ -12,8 +12,8 @@ const Projects = () => {
     slug: "trendmart-react",
     src: "/assets/trendmart.webp",
     desc: "A dummy webshop with sorting filtering and routing, with also using search query in filtering.",
-    note: "This is just a frontend webshop, not using any external databases. I tries to make a webshop as fast as I could under a week, while maintaining Modularity and clean code as much as I could. ",
-    keywords: ["ReactJs", "React Query", "Context Api", "React Router", "Zustand", "Tailwind", "HTML,CSS"],
+    note: "This is just a frontend webshop, not using any external databases. On checkout I just delete the cart currently.",
+    keywords: ["ReactJs", "React Query", "Context Api", "React Router", "Zustand", "Tailwind", "HTML", "CSS"],
   }, {
     title: "List maker with Zustand",
     slug: "listmaker-react",

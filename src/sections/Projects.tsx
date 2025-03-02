@@ -8,6 +8,13 @@ import Breaker from '../features/Breaker'
 
 const Projects = () => {
   const projects: Project[] = [{
+    title: "Trend Mart dummy webshop",
+    slug: "trendmart-react",
+    src: "/assets/trendmart.webp",
+    desc: "A dummy webshop with sorting filtering and routing, with also using search query in filtering.",
+    note: "This is just a frontend webshop, not using any external databases. I tries to make a webshop as fast as I could under a week, while maintaining Modularity and clean code as much as I could. ",
+    keywords: ["ReactJs", "React Query", "Context Api", "React Router", "Zustand", "Tailwind", "HTML,CSS"],
+  }, {
     title: "List maker with Zustand",
     slug: "listmaker-react",
     src: "/assets/listmaker.webp",
@@ -21,7 +28,7 @@ const Projects = () => {
     src_mobil: "/assets/movies-phone.webp",
     desc: "A website where the user can sort, filter in movies that come from the TheMovieDataBase API.",
     note: "A project where I tried to learn the React Query and React Routers basics.",
-    keywords: ["HTML5", "CSS3", "Tailwind", "ReactJs", "React Query", "Context Api", "React Router v6"],
+    keywords: ["ReactJs", "React Query", "Context Api", "React Router", "HTML", "CSS", "Tailwind"],
   },
   {
     title: "Todo App with React",
@@ -59,7 +66,7 @@ const Projects = () => {
           <H2 gray={true} className='!leading-20'>My Projects</H2>
           <H5 className='projdesc !leading-12'>Apps I've made so far to practice...</H5>
         </div>
-        <div className={cn("projcont overflow-x-auto overflow-y-hidden cursomScroll [scroll-snap-type:x_mandatory]",
+        <div className={cn("projcont overflow-x-auto overflow-y-hidden cursomScroll ", //[scroll-snap-type:x_mandatory] Remove it for the moment, need fixing
           "border-2 border-gray-200/50 rounded-md md:rounded-lg")}>
           <div className={cn("flex flex-row flex-nowrap gap-10")}>
             {projects.map(pr =>

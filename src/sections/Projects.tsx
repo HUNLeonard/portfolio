@@ -7,37 +7,46 @@ import useScrollAnimation from '../hooks/AnimationConfig'
 import Breaker from '../features/Breaker'
 
 const Projects = () => {
-  const projects: Project[] = [{
-    title: "Trend Mart dummy webshop",
-    slug: "trendmart-react",
-    src: "/assets/trendmart.webp",
-    desc: "A dummy webshop with sorting filtering and routing, with also using search query in filtering.",
-    note: "This is just a frontend webshop, not using any external databases. On checkout I just delete the cart currently.",
-    keywords: ["ReactJs", "React Query", "Context Api", "React Router", "Zustand", "Tailwind", "HTML", "CSS"],
-  }, {
-    title: "List maker with Zustand",
-    slug: "listmaker-react",
-    src: "/assets/listmaker.webp",
-    desc: "A kanban styled list maker, with basic functionality.",
-    note: "In this project I've tried out a statemanager called Zustand.",
-    keywords: ["Tailwind", "ReactJs", "Zustand"],
-  }, {
-    title: "Movies with external API",
-    slug: "movies-react",
-    src: "/assets/movies-wide.webp",
-    src_mobil: "/assets/movies-phone.webp",
-    desc: "A website where the user can sort, filter in movies that come from the TheMovieDataBase API.",
-    note: "A project where I tried to learn the React Query and React Routers basics.",
-    keywords: ["ReactJs", "React Query", "Context Api", "React Router", "HTML", "CSS", "Tailwind"],
-  },
-  {
-    title: "Todo App with React",
-    slug: "todo-react",
-    src: "/assets/todo.webp",
-    desc: "A regular todo app, using the localStorage, and regular ReactJS code.",
-    note: "One of my first react applications that I kept.",
-    keywords: ["HTML5", "CSS3", "Tailwind", "ReactJs"],
-  }
+  const projects: Project[] = [
+    {
+      title: "Harmony - Product showcase",
+      slug: "harmony-react",
+      src: "/assets/harmony.webp",
+      src_mobil: "/assets/harmony-phone.webp",
+      desc: "A showcase site for different products.",
+      note: "I wanted to make a 'fullscreen' webapp, from without looking it up (this was kinda pain :') ).",
+      keywords: ["ReactJs", "Zustand", "Tailwind", "HTML", "CSS"],
+    }, {
+      title: "Trend Mart dummy webshop",
+      slug: "trendmart-react",
+      src: "/assets/trendmart.webp",
+      desc: "A dummy webshop with sorting filtering and routing, with also using search query in filtering.",
+      note: "This is just a frontend webshop, not using any external databases. On checkout I just delete the cart currently.",
+      keywords: ["ReactJs", "React Query", "Context Api", "React Router", "Zustand", "Tailwind", "HTML", "CSS"],
+    }, {
+      title: "List maker with Zustand",
+      slug: "listmaker-react",
+      src: "/assets/listmaker.webp",
+      desc: "A kanban styled list maker, with basic functionality.",
+      note: "In this project I've tried out a statemanager called Zustand.",
+      keywords: ["Tailwind", "ReactJs", "Zustand"],
+    }, {
+      title: "Movies with external API",
+      slug: "movies-react",
+      src: "/assets/movies-wide.webp",
+      src_mobil: "/assets/movies-phone.webp",
+      desc: "A website where the user can sort, filter in movies that come from the TheMovieDataBase API.",
+      note: "A project where I tried to learn the React Query and React Routers basics.",
+      keywords: ["ReactJs", "React Query", "Context Api", "React Router", "HTML", "CSS", "Tailwind"],
+    },
+    {
+      title: "Todo App with React",
+      slug: "todo-react",
+      src: "/assets/todo.webp",
+      desc: "A regular todo app, using the localStorage, and regular ReactJS code.",
+      note: "One of my first react applications that I kept.",
+      keywords: ["HTML5", "CSS3", "Tailwind", "ReactJs"],
+    }
   ]
 
   useScrollAnimation({

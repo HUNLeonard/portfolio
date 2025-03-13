@@ -22,18 +22,30 @@ const Skills = () => {
       category: 'Styling',
       rating: '7'
     },
-
+    {
+      name: 'React',
+      icon: Boxes,
+      category: 'Language',
+      rating: '7'
+    },
     {
       name: 'JavaScript',
       icon: Braces,
       category: 'Language',
-      rating: '6'
+      rating: '7'
     },
     {
       name: 'Tailwind',
       icon: Palette,
       category: 'Styling',
       rating: '7'
+    },
+
+    {
+      name: 'TypeScript',
+      icon: FileJson,
+      category: 'Language',
+      rating: '6'
     },
     {
       name: 'Git/GitHub',
@@ -53,12 +65,7 @@ const Skills = () => {
       category: 'Framework',
       rating: '5'
     },
-    {
-      name: 'React',
-      icon: Boxes,
-      category: 'Language',
-      rating: '5'
-    },
+
     {
       name: 'Nuxt.js',
       icon: Boxes,
@@ -71,12 +78,7 @@ const Skills = () => {
       category: 'Framework',
       rating: '4'
     },
-    {
-      name: 'TypeScript',
-      icon: FileJson,
-      category: 'Language',
-      rating: '4'
-    },
+
 
   ];
 

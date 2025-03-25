@@ -27,7 +27,7 @@ const Img = ({ src = "", title = "", className = "", loading = "lazy", hoverScal
       title={title ?? 'Loading..'}
       className={cn("w-full h-full object-center object-cover transform-gpu",
         hoverScale ? "hover:scale-105 transition-[scale] duraiton-200 ease-out" : "",
-        hoverColor ? "hover:grayscale-0 transition-[all] duraiton-200 ease-out grayscale-100" : "",
+        hoverColor ? "hover:grayscale-0 transition-[filter] duraiton-200 ease-out grayscale-100" : "",
         "", className)}
     />
   )

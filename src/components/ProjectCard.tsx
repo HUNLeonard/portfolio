@@ -79,11 +79,11 @@ const ProjectCard = ({
 
           {/* Site */}
           <div ref={container} className="relative w-full max-md:aspect-square h-full md:max-w-4/5 lg:max-w-2/3 md:aspect-auto[12/8] md:rounded-2xl overflow-hidden bg-neutral-800">
-            <a href={projectIO} target="_blank" className="max-md:hidden">
+            <a href={projectIO} target="_blank" className="max-md:hidden *:blur-xs *:hover:blur-[0px]">
 
-              <Img src={src.split(".webp")[0] + "-small.webp"} loading="eager" title={title} hoverColor={true} className="cursor-pointer" />
+              <Img src={src.split(".webp")[0] + "-small.webp"} loading="eager" title={title} hoverColor className="cursor-pointer" />
 
-              <Img src={src} title={title} hoverColor={true} className="absolute top-0 cursor-pointer loading-image" />
+              <Img src={src} title={title} hoverColor className="absolute top-0 cursor-pointer loading-image" />
             </a>
 
             <Img src={src_mobil.length === 0 ? src.split(".webp")[0] + "-small.webp" : src_mobil.split(".webp")[0] + "-small.webp"}

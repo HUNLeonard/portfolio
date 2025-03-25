@@ -9,6 +9,15 @@ import Breaker from '../features/Breaker'
 const Projects = () => {
   const projects: Project[] = [
     {
+      title: "Code Snippets Manager",
+      slug: "code-snippets-react",
+      src: "/assets/csm.webp",
+      src_mobil: "/assets/csm-phone.webp",
+      desc: "Site for storing and managing code snippets with others or in private.",
+      note: "This is a website that I wanted to create a long time ago. It allows me to store my codes in one place and not have to look back at previous project codes.",
+      keywords: ["ReactJs", "Zustand", "Tailwind", "React Query", "ExpressJS", "MongoDB", "React Router", "Context Api", "HTML", "CSS"],
+    },
+    {
       title: "Harmony - Product showcase",
       slug: "harmony-react",
       src: "/assets/harmony.webp",

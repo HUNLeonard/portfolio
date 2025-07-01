@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" 
+    directory: "/"
+    target-branch: "develop"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "auto-update"
+    allow:
+      - dependency-type: "direct"
+    commit-message:
+      prefix: "build(deps)"
+      include: "scope"
